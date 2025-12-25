@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("ledButton");
-  const lightbulb = document.getElementById("lightbulb");
-  const ledIcon = document.getElementById("ledIcon");
 
   function updateButton(state) {
     if (state === "on") {
@@ -15,26 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function updateLightbulb(state) {
-    if (state === "on") {
-      lightbulb.classList.remove("off");
-      lightbulb.classList.add("on");
-    } else {
-      lightbulb.classList.remove("on");
-      lightbulb.classList.add("off");
-    }
-  }
-
-  function updateIcon(state) {
-    if (state === "on") {
-      ledIcon.classList.remove("off");
-      ledIcon.classList.add("on");
-    } else {
-      ledIcon.classList.remove("on");
-      ledIcon.classList.add("off");
-    }
-  }
-
   button.addEventListener("click", function () {
     const currentState = button.classList.contains("on") ? "on" : "off";
     const newState = currentState === "on" ? "off" : "on";
@@ -43,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response.ok) {
           updateButton(newState);
-          updateLightbulb(newState);
-          updateIcon(newState);
         } else {
           console.error("Failed to update LED state");
         }
@@ -59,9 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(`/led?state=${newState}`)
       .then((response) => {
         if (response.ok) {
-          updateLightbulb(newState);
           updateButton(newState);
-          updateIcon(newState);
         } else {
           console.error("Failed to update LED state");
         }
@@ -79,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .then((state) => {
       updateButton(state);
-      updateLightbulb(state);
-      updateIcon(state);
     })
     .catch((error) => {
       console.error("Error fetching initial state:", error);
