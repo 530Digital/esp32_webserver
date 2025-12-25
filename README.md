@@ -25,9 +25,9 @@ ESP32 Web Server
 
 ## Setup Instructions
 
-1. **Install PlatformIO**:
+1. **Install the PlatformIO Extension for VSCode**:
 
-   - Install [PlatformIO IDE](https://platformio.org/install) in your preferred editor (e.g., VS Code).
+   - Install the [PlatformIO](https://docs.platformio.org/en/latest/integration/ide/vscode.html) VSCode Extension.
 
 2. **Configure Wi-Fi Credentials**:
 
