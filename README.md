@@ -1,6 +1,10 @@
 # ESP32 Web Server with LED Control
 
-This project implements a web server on an ESP32 microcontroller to control an onboard LED. The LED state can be toggled via a web interface.
+This project implements a web server on an ESP32 microcontroller to control an onboard LED. The LED state can be toggled on/off via a web interface.
+
+## ESP32 Board
+
+I used these ESP32 boards from amazon: https://a.co/d/3pACbnY
 
 ## Features
 
