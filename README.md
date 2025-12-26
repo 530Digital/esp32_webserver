@@ -4,7 +4,7 @@ This project implements a web server on an ESP32 microcontroller to control an o
 
 ## ESP32 Board
 
-I used these ESP32 boards from amazon: https://a.co/d/3pACbnY
+I used these ESP32 boards from amazon: https://a.co/d/3pACbnY (not an affiliate link)
 
 ## Features
 
@@ -16,18 +16,24 @@ I used these ESP32 boards from amazon: https://a.co/d/3pACbnY
 
 ```
 ESP32 Web Server
+├── .vscode/
+│   ├── extensions.json                     # Recommended extensions for the workspace
 ├── data/
-│   ├── index.html       # Webpage for LED control
-│   ├── styles.css       # Styling for the webpage
-│   ├── main.js          # JavaScript for dynamic functionality
-│   └── .env             # Environment file for Wi-Fi credentials
+│   ├── .env_example                        # Environment file for Wi-Fi credentials
+│   ├── index.html                          # Webpage for LED control
+│   ├── styles.css                          # Styling for the webpage
+│   ├── main.js                             # JavaScript for dynamic functionality
 ├── src/
-│   └── main.cpp         # Main application code
-├── platformio.ini       # PlatformIO configuration file
-└── README.md            # Project documentation
+│   └── main.cpp                            # Main application code
+├── .gitignore                              # gitignore file
+├── esp32_webserver.code-workspace          # VSCode workspace config file
+├── platformio.ini                          # PlatformIO configuration file
+└── README.md                               # Project documentation
 ```
 
 ## Setup Instructions
+
+This assumes you are using VSCode for your project. If not you can get VSCode from: https://code.visualstudio.com/
 
 1. **Install the PlatformIO Extension for VSCode**:
 
@@ -35,23 +41,23 @@ ESP32 Web Server
 
 2. **Configure Wi-Fi Credentials**:
 
-   - Create a `.env` file in the `data/` directory with the following content:
+   - Rename the `.env_example` file located in the data director to `.env` and update the vales for WIFI_SSID and WIFI_PASSWORD.
      ```
      WIFI_SSID=YourWiFiSSID
      WIFI_PASSWORD=YourWiFiPassword
      ```
 
-3. **Build and Upload Filesystem**:
+3. **Build and Upload Firmware**:
 
-   - Run the following tasks in PlatformIO:
-     - `Build Filesystem Image`
-     - `Upload Filesystem Image`
+   - Anytime you update the main.cpp file you will need to run `PlatformIO: Upload` to flash the firmware to the ESP32.
+     - This step is not required if you are only updating the files located in the data directory.
 
-4. **Build and Upload Firmware**:
+4. **Build and Upload Filesystem**:
 
-   - Run the `Upload` task to flash the firmware to the ESP32.
+   - Anytime you modify the files in the data directory you will want to run `Build Filesystem Image` and `Upload Filesystem Image`. You do not have to upload the firmware if you only modified files in the data directory.
 
 5. **Access the Web Interface**:
+
    - Open a browser and navigate to the ESP32's IP address (displayed in the serial monitor).
 
 ## Usage
