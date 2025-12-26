@@ -9,7 +9,7 @@ I used these ESP32 boards from amazon: https://a.co/d/3pACbnY (not an affiliate 
 ## Features
 
 - **Web Interface**: A user-friendly webpage to control the LED.
-- **Dynamic State Synchronization**: The webpage reflects the current state of the LED. [Known Bug](https://github.com/530Digital/esp32_webserver/issues/1)
+- **Dynamic State Synchronization**: The webpage reflects the current state of the LED.
 - **Environment Variables**: Wi-Fi credentials are securely stored in a `.env` file and loaded at runtime.
 
 ## Project Structure
@@ -62,7 +62,7 @@ This assumes you are using VSCode for your project. If not you can get VSCode fr
 
 ## Usage
 
-- **Toggle LED**: Click the button on the webpage to turn the LED on or off.
+- **Toggle LED**: Click the button on the webpage to turn the LED on or off. [Known Bug](https://github.com/530Digital/esp32_webserver/issues/1)
 
 ## Dependencies
 
