@@ -54,7 +54,8 @@ This assumes you are using VSCode for your project. If not you can get VSCode fr
 
 4. **Build and Upload Filesystem**:
 
-   - Anytime you modify the files in the data directory you will want to run `Build Filesystem Image` and `Upload Filesystem Image`. You do not have to upload the firmware if you only modified files in the data directory.
+   - Anytime you modify the files in the data directory you will want to run `Build Filesystem Image` and `Upload Filesystem Image`.
+     - You do not have to upload the firmware if you only modified files in the data directory.
 
 5. **Access the Web Interface**:
    - Open a browser and navigate to the ESP32's IP address (displayed in the serial monitor).
