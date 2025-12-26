@@ -19,7 +19,7 @@ ESP32 Web Server
 ├── .vscode/
 │   ├── extensions.json                     # Recommended extensions for the workspace
 ├── data/
-│   ├── .env_example                        # Environment file for Wi-Fi credentials
+│   ├── .env_example                        # Example environment file for Wi-Fi credentials
 │   ├── index.html                          # Webpage for LED control
 │   ├── styles.css                          # Styling for the webpage
 │   ├── main.js                             # JavaScript for dynamic functionality
