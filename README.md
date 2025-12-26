@@ -35,13 +35,11 @@ ESP32 Web Server
 
 This assumes you are using VSCode for your project. If not you can get VSCode from: https://code.visualstudio.com/
 
-1. **Install the PlatformIO Extension for VSCode**:
-
-   - Install the [PlatformIO](https://docs.platformio.org/en/latest/integration/ide/vscode.html) VSCode Extension.
+1. **Install the [PlatformIO](https://docs.platformio.org/en/latest/integration/ide/vscode.html) Extension for VSCode**:
 
 2. **Configure Wi-Fi Credentials**:
 
-   - Rename the `.env_example` file located in the data director to `.env` and update the vales for WIFI_SSID and WIFI_PASSWORD.
+   - Rename the `.env_example` file located in the data directory to `.env` and update the vales for WIFI_SSID and WIFI_PASSWORD.
      ```
      WIFI_SSID=YourWiFiSSID
      WIFI_PASSWORD=YourWiFiPassword
@@ -57,7 +55,6 @@ This assumes you are using VSCode for your project. If not you can get VSCode fr
    - Anytime you modify the files in the data directory you will want to run `Build Filesystem Image` and `Upload Filesystem Image`. You do not have to upload the firmware if you only modified files in the data directory.
 
 5. **Access the Web Interface**:
-
    - Open a browser and navigate to the ESP32's IP address (displayed in the serial monitor).
    - Click the button on the webpage to turn the LED on or off. [Known Bug](https://github.com/530Digital/esp32_webserver/issues/1)
 
