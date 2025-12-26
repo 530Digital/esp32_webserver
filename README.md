@@ -9,7 +9,7 @@ I used these ESP32 boards from amazon: https://a.co/d/3pACbnY (not an affiliate 
 ## Features
 
 - **Web Interface**: A user-friendly webpage to control the LED.
-- **Dynamic State Synchronization**: The webpage reflects the current state of the LED. [Known Bug](https://github.com/530Digital/esp32_webserver/issues/1)
+- **State Synchronization**: The webpage reflects the current state of the LED. [Known Bug](https://github.com/530Digital/esp32_webserver/issues/1)
 - **Environment Variables**: Wi-Fi credentials are securely stored in a `.env` file and loaded at runtime.
 
 ## Project Structure
