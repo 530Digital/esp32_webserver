@@ -35,7 +35,9 @@ ESP32 Web Server
 
 This assumes you are using VSCode for your project. If not you can get VSCode from: https://code.visualstudio.com/
 
-1. **Install the [PlatformIO](https://docs.platformio.org/en/latest/integration/ide/vscode.html) Extension for VSCode**:
+1. **Install the Extension for VSCode**:
+
+   - [PlatformIO Extension](https://docs.platformio.org/en/latest/integration/ide/vscode.html)
 
 2. **Configure Wi-Fi Credentials**:
 
